@@ -1,0 +1,16 @@
+
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    background-color: #6296CB;
+
+
+}
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -170px;
+
+}
