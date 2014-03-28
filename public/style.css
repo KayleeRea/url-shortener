@@ -1,11 +1,8 @@
+a:link {color:#A4A4A4;}
+a:visited {color:#A4A4A4;}
+a:hover {color:#A4A4A4;}
+a:active {color:#A4A4A4;}
 
-.button-secondary {
-    color: white;
-    border-radius: 4px;
-    background-color: #6296CB;
-
-
-}
 .centered {
     position: fixed;
     top: 50%;
@@ -13,4 +10,73 @@
     margin-top: -50px;
     margin-left: -170px;
 
+}
+
+.pure-button {
+    font-family: inherit;
+    font-size: 80%;
+    *font-size: 50%; /*IE 6/7 - To reduce IE's oversized button text*/
+    *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+    padding: 0.5em 1em;
+    color: #FFFFFF; /* rgba not supported (IE 8) */
+    *color: ##FFFFFF; /* IE 6 & 7 */
+    border: 1px solid #999;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    background-color: #6296CB;
+    text-decoration: none;
+    border-radius: 2px;
+
+}
+
+BODY {
+    color: #A4A4A4;
+}
+
+<!-- CSS goes in the document HEAD or added to your external stylesheet -->
+
+table.gridtable {
+    font-family: verdana,arial,sans-serif;
+    font-size:11px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+table.gridtable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+table.gridtable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+
+
+img
+{
+    /*float:right;*/
+    display: inline-block;
+}
+
+#inputs {
+float: left;
+
+    position: absolute;
+    padding: 0 0 10px 0; /*top right bottom left*/
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+#shorts {
+    float: left;
+    position: absolute;
+    padding: 0 0 10px 0; /*top right bottom left*/
+    margin-top: 0px;
+    margin-left: 150px;
 }

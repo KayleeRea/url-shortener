@@ -1,33 +1,26 @@
 require 'sinatra/base'
 
 class App < Sinatra::Application
+  URLPATH = []
   INPUTS = []
   SHORTS = []
   get '/' do
+    URLPATH << request.url
     erb :index
   end
 
-  post '/stats' do
+  post '/input' do
     INPUTS << params[:url_input]
-    INPUTS.each_with_index do |url, index|
-      SHORTS << "http://still-taiga-3763.herokuapp.com/#{(index + 1)}"
-    end
+    SHORTS << "#{INPUTS.length}"
     redirect '/stats'
   end
 
   get '/stats' do
-    erb :stats, :locals => {:inputs => INPUTS, :shorts => SHORTS}
+    url_path = URLPATH[0]
+    erb :stats, :locals => {:inputs => INPUTS, :shorts => SHORTS, :url_path => url_path}
   end
 
-  #post '/:id' do
-  #  SHORTS.each_with_index do |url, index|
-  #    @url = url
-  #    if index == params[:id]
-  #      visit @url
-  #    end
-  #    else
-  #    redirect '/'
-  #  end
-  #end
-
+  get '/:id' do
+    redirect 'http://'+INPUTS[params[:id].to_i-1].to_s
+  end
 end

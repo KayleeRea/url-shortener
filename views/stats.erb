@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="/style.css">
   <title>URLify</title>
 </head>
-<body>
-<% inputs.each do |inputs| %>
-  <%= inputs  %>
-<% end %>
-<% shorts.each do |shorts| %>
-  <%= shorts  %>
-<% end %>
+<body class="centered">
+
+<ul>
+  <div id="inputs">
+    <%= inputs.last %>
+  </div>
+</ul>
+
+<ul>
+  <div id="shorts">
+    <a href="<%= url_path %><%= shorts.last %>"><%= url_path %><%= shorts.last %></a>
+  </div>
+</ul>
+
+
 </body>
 </html>
+
+

@@ -11,6 +11,6 @@ feature 'Manages Homepage' do
     fill_in "Type URL to shorten here", :with => 'http://tutorials.gschool.it'
     click_button 'Shorten'
     expect(page).to have_content "http://tutorials.gschool.it"
-    expect(page).to have_content "http://still-taiga-3763.herokuapp.com/1"
+    expect(page).to have_content "http://www.example.com/1"
   end
 end
