@@ -19,4 +19,15 @@ class App < Sinatra::Application
     erb :stats, :locals => {:inputs => INPUTS, :shorts => SHORTS}
   end
 
+  #post '/:id' do
+  #  SHORTS.each_with_index do |url, index|
+  #    @url = url
+  #    if index == params[:id]
+  #      visit @url
+  #    end
+  #    else
+  #    redirect '/'
+  #  end
+  #end
+
 end
