@@ -21,6 +21,10 @@ class App < Sinatra::Application
   end
 
   get '/:id' do
-    redirect 'http://'+INPUTS[params[:id].to_i-1].to_s
+    if INPUTS[params[:id].to_i-1].to_s.include?("http://")
+    redirect INPUTS[params[:id].to_i-1].to_s
+    else
+      redirect 'http://'+INPUTS[params[:id].to_i-1].to_s
+    end
   end
 end

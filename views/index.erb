@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="/normalize.css">
   <link rel="stylesheet" type="text/css" href="/style.css">
   <title>URLify</title>
 
 </head>
-<body class="centered">
+<body>
 
-<form action='/input' method="post">
-  http://
-  <input type="text" name="url_input" placeholder="Enter the URL you would like to shorten..." size="50">
-  <input type="submit" value="Shorten" class="pure-button pure-button-primary">
-
+<form class='shorten-url-inputs' action='/input' method="post">
+  <input class="url-to-shorten" type="text" name="url_input" placeholder='Enter the URL you would like to "shorten"' size="50">
+  <input type="submit" value="Shorten" class="pure-button pure-button-primary action">
 
 </form>
-
 </body>
 </html>

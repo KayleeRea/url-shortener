@@ -1,16 +1,15 @@
-a:link {color:#A4A4A4;}
-a:visited {color:#A4A4A4;}
-a:hover {color:#A4A4A4;}
-a:active {color:#A4A4A4;}
+body {
+    font-family: "Verdana";
+}
 
-.centered {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -170px;
+.strong {
+    font-weight: bold;
+}
+
+.font-family {
 
 }
+
 
 .pure-button {
     font-family: inherit;
@@ -90,15 +89,6 @@ a.pure-button-selected {
 }
 
 
-BODY {
-    color: #A4A4A4;
-}
-
-<!-- CSS goes in the document HEAD or added to your external stylesheet -->
-
-
-
-
 img
 {
     /*float:right;*/
@@ -122,4 +112,38 @@ float: left;
     margin-left: 150px;
 }
 
+.shorten-url-inputs {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
 
+.url-to-shorten {
+    width: 50%;
+    font-size: 1.25em;
+    margin: .5em auto;
+    padding: .25em;
+}
+
+.action {
+    padding: .5em;
+    background-color: #0077ff;
+    color: #fff;
+    margin: auto;
+}
+
+table {
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-90px;
+    margin-left:-200px;
+    padding: 2px;
+}
+
+td {
+    padding: 1em;
+    margin: 1em;
+
+}

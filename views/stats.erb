@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="/normalize.css">
   <link rel="stylesheet" type="text/css" href="/style.css">
   <title>URLify</title>
 </head>
-<body class="centered">
+<body>
+<table>
+  <tr>
+    <td class="strong">Original URL</td>
+    <td><%= inputs.last %></td>
+  </tr>
+  <tr>
+    <td class="strong">'Shortened' URL</td>
+    <td><a href="<%= url_path %><%= shorts.last %>"><%= url_path %><%= shorts.last %></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><a href="/">"Shorten" another URL</a></td>
+  </tr>
 
-<ul>
-  <div id="inputs">
-    <%= inputs.last %>
-  </div>
-</ul>
-
-<ul>
-  <div id="shorts">
-    <a href="<%= url_path %><%= shorts.last %>"><%= url_path %><%= shorts.last %></a>
-  </div>
-</ul>
-
-
+</table>
 </body>
 </html>
-
-
