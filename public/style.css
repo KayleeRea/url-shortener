@@ -6,10 +6,6 @@ body {
     font-weight: bold;
 }
 
-.font-family {
-
-}
-
 
 .pure-button {
     font-family: inherit;
@@ -155,4 +151,13 @@ form {
     top:40%;
     padding: 2px;
     width: 100%
+}
+#div {
+    color: #FF0000;
+    position:absolute;
+    top:35%;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+
 }

@@ -7,7 +7,10 @@
 
 </head>
 <body>
-
+<div id="div">
+<%= session[:message] %>
+<% session.delete(:message) %>
+</div>
 <form class='shorten-url-inputs form' action='/input' method="post">
   <input class="url-to-shorten" type="text" name="url_input" placeholder='Enter the URL you would like to "shorten"' size="50">
   <input type="submit" value="Shorten" class="pure-button pure-button-primary action">

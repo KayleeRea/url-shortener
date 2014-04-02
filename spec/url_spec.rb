@@ -16,4 +16,13 @@ feature 'Manages Homepage' do
     visit "/1"
     current_url.should == "http://tutorials.gschool.it/"
   end
+
+  scenario 'will send an error message' do
+    visit '/'
+    within 'form' do
+      fill_in 'url_input', with: ''
+    end
+    click_button 'Shorten'
+    expect(page).to have_content('URL cannot be blank')
+  end
 end
